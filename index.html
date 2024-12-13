@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+const userWord = prompt("Iltimos, biror so'z kiriting:");
+
+if (!userWord) {
+    alert("Hech qanday so'z kiritilmadi!");
+} else {
+    const userChar = prompt("Iltimos, biror harf kiriting:");
+
+    if (!userChar) {
+        alert("Hech qanday harf kiritilmadi!");
+    } else if (userWord.includes(userChar)) {
+        alert(`Bu so'zda '${userChar}' harfi bor.`);
+    } else {
+        alert(`Bu so'zda '${userChar}' harfi yo'q.`);
+    }
+}
+    </script>
+</body>
+</html>
